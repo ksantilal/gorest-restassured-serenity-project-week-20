@@ -1,9 +1,13 @@
 package com.gorest.model;
 
 public class PostsPojo {
+
     private String id;
+
     private String user_id;
+
     private String title;
+
     private String body;
 
     public String getId() {

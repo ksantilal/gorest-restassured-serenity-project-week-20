@@ -20,8 +20,8 @@ import static org.hamcrest.Matchers.hasValue;
 @RunWith(SerenityRunner.class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class UserCRUDTestWithSteps extends TestBase {
-    static String name = TestUtils.getRandomValue() + "Naren";
-    static String email = TestUtils.getRandomValue() + "naren123@gmail.com";
+    static String name = TestUtils.getRandomValue() + "Kamal";
+    static String email = TestUtils.getRandomValue() + "kamal123@gmail.com";
     static String gender = "Male";
     static String status = "Active";
     static int userId;
@@ -56,8 +56,8 @@ public class UserCRUDTestWithSteps extends TestBase {
     @Title("Update the user information and verify the updated information")
     @Test
     public void test04_UpdateUser() {
-        name = "Naren" + TestUtils.getRandomValue();
-        email = "naren123@gmail.com" + TestUtils.getRandomValue();
+        name = "Kamal" + TestUtils.getRandomValue();
+        email = "kamal123@gmail.com" + TestUtils.getRandomValue();
         steps.updateUser(userId, name, email, gender, status).statusCode(200);
 
         HashMap<String, Object> userMap = steps.getUserInfoByUserID(userId);

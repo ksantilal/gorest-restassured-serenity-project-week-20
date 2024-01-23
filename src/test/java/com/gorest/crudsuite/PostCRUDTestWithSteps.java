@@ -16,7 +16,7 @@ import org.junit.runners.MethodSorters;
 public class PostCRUDTestWithSteps {
     String id = TestUtils.getRandomValue();
     String user_id = TestUtils.getRandomValue();
-    String title = "Naren" + TestUtils.getRandomValue();
+    String title = "Kamal" + TestUtils.getRandomValue();
     String body = "abc";
     static int postId;
 
@@ -43,7 +43,7 @@ public class PostCRUDTestWithSteps {
     @Title("Update post information")
     @Test
     public void test003_UpdatePost() {
-        title = "Naren" + " Updated";
+        title = "Kamal" + " Updated";
         ValidatableResponse response = steps.updatePost(id, user_id, title, body).statusCode(200);
     }
 

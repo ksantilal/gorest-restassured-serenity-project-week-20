@@ -2,8 +2,11 @@ package com.gorest.model;
 
 public class UsersPojo {
     private String name;
+
     private String email;
+
     private String gender;
+
     private String status;
 
     public String getName() {
